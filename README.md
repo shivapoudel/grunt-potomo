@@ -37,7 +37,7 @@ Default: `false`
 
 Whether the `PO` file(s) used from source should be deleted or remove after the creation of `MO` file(s).
 
-#### Example config
+### Example config
 
 ```js
 grunt.initConfig({
