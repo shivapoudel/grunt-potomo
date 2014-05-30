@@ -21,9 +21,6 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-potomo');
 ```
 
-## Documentation
-See the [Gruntfile](https://github.com/axisthemes/grunt-potomo/blob/master/Gruntfile.js) in this repo for a full example.
-
 ## The "potomo" task
 _Run this task with the `grunt potomo` command._
 
