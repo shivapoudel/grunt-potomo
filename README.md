@@ -4,12 +4,8 @@
 
 > Grunt Plugin to Compile .po files into binary .mo files with msgfmt.
 
-### Requirements
-
-* This plugin requires Grunt `~0.4.5`
-* [GNU Gettext](http://www.gnu.org/software/gettext/) installed and in your PATH.
-
 ## Getting Started
+
 This plugin requires Grunt `~0.4.5`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
@@ -24,10 +20,9 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-potomo');
 ```
 
-## The "potomo" task
-Compile .po files into binary .mo files with msgfmt.
-
 *This task requires you to have [GNU Gettext](http://www.gnu.org/software/gettext/) installed and in your PATH.*
+
+## The "potomo" task
 
 _Run this task with the `grunt potomo` command._
 
