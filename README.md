@@ -144,7 +144,13 @@ grunt.initConfig({
 
 ## Release History
 
- * 2014-05-30   v0.1.0   Initial release.
+#### v0.1.1 - 2014-05-30
+
+* Re-tag updates from 0.1.0 that didn't get added to the release.
+
+#### v0.1.0 - 2014-05-30
+
+* Initial release.
 
 ## License
 Copyright (c) 2014 [AxisThemes](http://axisthemes.com). Licensed under the MIT license.
