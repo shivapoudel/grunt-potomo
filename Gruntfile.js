@@ -32,7 +32,7 @@ module.exports = function(grunt) {
 
 		// Configuration to be run (and then tested).
 		potomo: {
-			test: {
+			i10n: {
 				options: {
 					poDel: false
 				},
@@ -45,7 +45,7 @@ module.exports = function(grunt) {
 					nonull: true
 				}]
 			}
-		}
+		},
 
 		// Unit tests.
 		nodeunit: {
@@ -67,4 +67,4 @@ module.exports = function(grunt) {
 
 	// Register default task.
 	grunt.registerTask( 'default', ['jshint', 'test'] );
-}
+};
