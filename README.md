@@ -4,9 +4,11 @@
 
 > Grunt Plugin to Compile .po files into binary .mo files with msgfmt.
 
-## Getting Started
-This plugin requires Grunt `^0.4.5`
+### Requirements
+* This plugin requires Grunt `~0.4.5`
+* [GNU Gettext](http://www.gnu.org/software/gettext/) installed and in your PATH.
 
+## Getting Started
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
@@ -18,8 +20,6 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 ```js
 grunt.loadNpmTasks('grunt-potomo');
 ```
-
-*This task requires you to have [GNU Gettext](http://www.gnu.org/software/gettext/) installed and in your PATH.*
 
 ## The "potomo" task
 _Run this task with the `grunt potomo` command._
@@ -34,31 +34,29 @@ Default: `false`
 
 Whether the `PO` file(s) used from source should be deleted or remove after the creation of `MO` file(s).
 
-### Examples
-
-#### Example config
+### Example config
 
 ```js
 grunt.initConfig({
-  potomo: {                     // Task
-    dist: {                     // Target
-      options: {                // Target options
-        poDel: true
-      },
-      files: {                  // Dictionary of files
-        'en_GB.mo': 'en_GB.po', // 'destination': 'source'
-        'ne_NP.mo': 'ne_NP.po'
-      }
-    },
-    dev: {                      // Another target
-      options: {                // Target options
-        poDel: false
-      },
-      files: {
-        'dest/languages': ['en_GB.po', 'ne_NP.po']
-      }
-    }
-  }
+	potomo: {							// Task
+		dist: {							// Target
+			options: {					// Target options
+				poDel: true
+			},
+			files: {					// Dictionary of files
+				'en_GB.mo': 'en_GB.po',	// 'destination': 'source'
+				'ne_NP.mo': 'ne_NP.po'
+			}
+		},
+		dev: {							// Another target
+			options: {					// Target options
+				poDel: false
+			},
+			files: {
+				'dest/languages': ['en_GB.po', 'ne_NP.po']
+			}
+		}
+	}
 });
 
 grunt.loadNpmTasks('grunt-potomo');
@@ -66,17 +64,36 @@ grunt.loadNpmTasks('grunt-potomo');
 grunt.registerTask('default', ['potomo']);
 ```
 
+### Example usage
+
 #### Compile
 
 ```js
 grunt.initConfig({
-  potomo: {
-    dist: {
-      files: {
-        'ne_NP.mo': 'ne_NP.po'
-      }
-    }
-  }
+	potomo: {
+		dist: {
+			files: {
+				'ne_NP.mo': 'ne_NP.po'
+			}
+		}
+	}
+});
+```
+
+#### Compile with options
+
+```js
+grunt.initConfig({
+	potomo: {
+		dist: {
+			options: {
+				poDel: true
+			}
+			files: {
+				'ne_NP.mo': 'ne_NP.po'
+			}
+		}
+	}
 });
 ```
 
@@ -87,14 +104,14 @@ You can specify multiple `destination: source` items in `files`.
 
 ```js
 grunt.initConfig({
-  potomo: {
-    dist: {
-      files: {
-        'en_GB.mo': 'en_GB.po',
-        'ne_NP.mo': 'ne_NP.po'
-      }
-    }
-  }
+	potomo: {
+		dist: {
+			files: {
+				'en_GB.mo': 'en_GB.po',
+				'ne_NP.mo': 'ne_NP.po'
+			}
+		}
+	}
 });
 ```
 
@@ -104,29 +121,26 @@ Instead of naming all files you want to compile, you can use the `expand` proper
 
 ```js
 grunt.initConfig({
-  dirs: {
-    lang: 'language',
-  },
-  potomo: {
-    dist: {
-      options: {
-        poDel: false
-      },
-      files: [{
-        expand: true,
-        cwd: '<%= dirs.lang %>/po',
-        src: ['*.po'],
-        dest: '<%= dirs.lang %>/mo',
-        ext: '.mo',
-        nonull: true
-      }]
-    }
-  }
+	dirs: {
+		lang: 'language',
+	},
+	potomo: {
+		dist: {
+			options: {
+				poDel: false
+			},
+			files: [{
+				expand: true,
+				cwd: '<%= dirs.lang %>/po',
+				src: ['*.po'],
+				dest: '<%= dirs.lang %>/mo',
+				ext: '.mo',
+				nonull: true
+			}]
+		}
+	}
 });
 ```
-
-## Big Thanks to:
-_(Nothing Yet)_
 
 ## Release History
 
