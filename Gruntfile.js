@@ -33,20 +33,10 @@ module.exports = function(grunt) {
 		// Configuration to be run (and then tested).
 		potomo: {
 			i10n: {
-				options: {
-					poDel: false
-				},
-				files: [{
-					expand: true,
-					cwd: 'test/fixtures',
-					src: [
-						'en_GB.po',
-						'ne_NP.po'
-					],
-					dest: 'tmp',
-					ext: '.mo',
-					nonull: true
-				}]
+				files: {
+					'tmp/en_GB.mo': 'test/fixtures/en_GB.po',
+					'tmp/ne_NP.mo': 'test/fixtures/ne_NP.po'
+				}
 			}
 		},
 
