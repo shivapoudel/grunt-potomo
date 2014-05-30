@@ -41,7 +41,7 @@
     "grunt-contrib-copy": "^0.5.0",
     "grunt-contrib-nodeunit": "^0.4.0",
     "grunt": "~0.4.5",
-    "shelljs": "~0.4.0"
+    "shelljs": "~0.3.0"
   },
   "peerDependencies": {
     "grunt": "~0.4.5"
