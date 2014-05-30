@@ -39,7 +39,10 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd: 'test/fixtures',
-					src: ['*.po'],
+					src: [
+						'en_GB.po',
+						'ne_NP.po'
+					],
 					dest: 'tmp',
 					ext: '.mo',
 					nonull: true
