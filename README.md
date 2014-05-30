@@ -41,18 +41,18 @@ Whether the `PO` file(s) used from source should be deleted or remove after the 
 
 ```js
 grunt.initConfig({
-	potomo: {                     // Task
-		dist: {                     // Target
-			options: {                // Target options
+	potomo: {											// Task
+		dist: {											// Target
+			options: {								// Target options
 				poDel: true
 			},
-			files: {                  // Dictionary of files
-				'en_GB.mo': 'en_GB.po', // 'destination': 'source'
+			files: {									// Dictionary of files
+				'en_GB.mo': 'en_GB.po',	// 'destination': 'source'
 				'ne_NP.mo': 'ne_NP.po'
 			}
 		},
-		dev: {                      // Another target
-			options: {                // Target options
+		dev: {											// Another target
+			options: {								// Target options
 				poDel: false
 			},
 			files: {
