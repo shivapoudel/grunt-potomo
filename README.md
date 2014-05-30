@@ -4,13 +4,8 @@
 
 > Grunt Plugin to Compile .po files into binary .mo files with msgfmt.
 
-### Requirements
-
-* This plugin requires Grunt `~0.4.5`.
-* [GNU Gettext](http://www.gnu.org/software/gettext/) installed and in your PATH.
-
 ## Getting Started
-This plugin requires Grunt `~0.4.0`
+This plugin requires Grunt `^0.4.5`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -24,25 +19,22 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-potomo');
 ```
 
-## The "potomo" task
-Compile .po files into binary .mo files with msgfmt.
-
 *This task requires you to have [GNU Gettext](http://www.gnu.org/software/gettext/) installed and in your PATH.*
 
+## The "potomo" task
 _Run this task with the `grunt potomo` command._
 
 Task targets, files and options may be specified according to the grunt [Configuring tasks](http://gruntjs.com/configuring-tasks) guide.
 
 ### Options
 
-#### poDel
-
-Type: `Boolean`
+#### options.poDel
+Type: `Boolean`  
 Default: `false`
 
 Whether the `PO` file(s) used from source should be deleted or remove after the creation of `MO` file(s).
 
-### Usage Examples
+### Examples
 
 #### Example config
 
@@ -108,7 +100,7 @@ grunt.initConfig({
 
 #### Compile files in a directory
 
-Instead of naming all files you want to compile, you can use the `expand` property allowing you to specify a directory. More information available in the [grunt docs](http://gruntjs.com/configuring-tasks) - `Building the files object dynamically`.
+Instead of naming all files you want to compile, you can use the `expand` property allowing you to specify a directory. More information available in the [grunt docs](http://gruntjs.com/configuring-tasks#building-the-files-object-dynamically) - `Building the files object dynamically`.
 
 ```js
 grunt.initConfig({
