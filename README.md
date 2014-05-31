@@ -39,25 +39,25 @@ Whether the `PO` file(s) used from source should be deleted or remove after the 
 
 ```js
 grunt.initConfig({
-	potomo: {                            // Task
-		dist: {                            // Target
-			options: {                       // Target options
-				poDel: true
-			},
-			files: {                         // Dictionary of files
-				'en_GB.mo': 'en_GB.po',        // 'destination': 'source'
-				'ne_NP.mo': 'ne_NP.po'
-			}
-		},
-		dev: {                             // Another target
-			options: {                       // Target options
-				poDel: false
-			},
-			files: {
-				'dest/languages': ['en_GB.po', 'ne_NP.po']
-			}
-		}
-	}
+  potomo: {                            // Task
+    dist: {                            // Target
+      options: {                       // Target options
+        poDel: true
+      },
+      files: {                         // Dictionary of files
+        'en_GB.mo': 'en_GB.po',        // 'destination': 'source'
+        'ne_NP.mo': 'ne_NP.po'
+      }
+    },
+    dev: {                             // Another target
+      options: {                       // Target options
+        poDel: false
+      },
+      files: {
+        'dest/languages': ['en_GB.po', 'ne_NP.po']
+      }
+    }
+  }
 });
 
 grunt.loadNpmTasks('grunt-potomo');
@@ -71,13 +71,13 @@ grunt.registerTask('default', ['potomo']);
 
 ```js
 grunt.initConfig({
-	potomo: {
-		dist: {
-			files: {
-				'ne_NP.mo': 'ne_NP.po'
-			}
-		}
-	}
+  potomo: {
+    dist: {
+      files: {
+        'ne_NP.mo': 'ne_NP.po'
+      }
+    }
+  }
 });
 ```
 
@@ -85,16 +85,16 @@ grunt.initConfig({
 
 ```js
 grunt.initConfig({
-	potomo: {
-		dist: {
-			options: {
-				poDel: true
-			}
-			files: {
-				'ne_NP.mo': 'ne_NP.po'
-			}
-		}
-	}
+  potomo: {
+    dist: {
+      options: {
+        poDel: true
+      }
+      files: {
+        'ne_NP.mo': 'ne_NP.po'
+      }
+    }
+  }
 });
 ```
 
@@ -105,14 +105,14 @@ You can specify multiple `destination: source` items in `files`.
 
 ```js
 grunt.initConfig({
-	potomo: {
-		dist: {
-			files: {
-				'en_GB.mo': 'en_GB.po',
-				'ne_NP.mo': 'ne_NP.po'
-			}
-		}
-	}
+  potomo: {
+    dist: {
+      files: {
+        'en_GB.mo': 'en_GB.po',
+        'ne_NP.mo': 'ne_NP.po'
+      }
+    }
+  }
 });
 ```
 
@@ -122,24 +122,24 @@ Instead of naming all files you want to compile, you can use the `expand` proper
 
 ```js
 grunt.initConfig({
-	dirs: {
-		lang: 'language',
-	},
-	potomo: {
-		dist: {
-			options: {
-				poDel: false
-			},
-			files: [{
-				expand: true,
-				cwd: '<%= dirs.lang %>/po',
-				src: ['*.po'],
-				dest: '<%= dirs.lang %>/mo',
-				ext: '.mo',
-				nonull: true
-			}]
-		}
-	}
+  dirs: {
+    lang: 'language',
+  },
+  potomo: {
+    dist: {
+      options: {
+        poDel: false
+      },
+      files: [{
+        expand: true,
+        cwd: '<%= dirs.lang %>/po',
+        src: ['*.po'],
+        dest: '<%= dirs.lang %>/mo',
+        ext: '.mo',
+        nonull: true
+      }]
+    }
+  }
 });
 ```
 
