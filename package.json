@@ -8,13 +8,6 @@
     "email": "axisthemes@gmail.com",
     "url": "http://axisthemes.com"
   },
-  "contributors": [
-    {
-      "name": "Shiva Poudel",
-      "email": "info.shivapoudel@gmail.com",
-      "url": "http://axisthemes.com"
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/axisthemes/grunt-potomo.git"
