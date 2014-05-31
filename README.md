@@ -143,29 +143,5 @@ grunt.initConfig({
 });
 ```
 
-## Release History
-
-#### v0.1.3 - 2014-05-31
-
-* Fixed the `README.md` error with `dependencies` status.
-
-#### v0.1.2 - 2014-05-31
-
-* Fixed the `package.json` error with `shelljs` dependencies.
-
-#### v0.1.1 - 2014-05-30
-
-* Re-tag updates from 0.1.0 that didn't get added to the release.
-
-#### v0.1.0 - 2014-05-30
-
-* Initial release.
-
 ## License
-Copyright (c) 2014 [AxisThemes](http://axisthemes.com). Licensed under the MIT license.
-
----
-
-Task submitted by [Shiva Poudel](http://github.com/shivapoudel)
-
-*This file was generated on Fri May 30 2014 14:43:40.*
+[MIT](http://opensource.org/licenses/MIT) © [AxisThemes](http://axisthemes.com)
