@@ -144,6 +144,11 @@ grunt.initConfig({
 
 ## Release History
 
+#### v0.1.2 - 2014-05-31
+
+* Fixed the `package.json` error with `shelljs` dependencies.
+
+
 #### v0.1.1 - 2014-05-30
 
 * Re-tag updates from 0.1.0 that didn't get added to the release.
