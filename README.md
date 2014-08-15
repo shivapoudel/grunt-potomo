@@ -1,9 +1,9 @@
 # grunt-potomo
-[![NPM version](https://badge.fury.io/js/grunt-potomo.svg)](http://badge.fury.io/js/grunt-potomo)
+
 [![Build Status](https://travis-ci.org/axisthemes/grunt-potomo.svg?branch=master)](https://travis-ci.org/axisthemes/grunt-potomo)
+[![NPM version](https://badge.fury.io/js/grunt-potomo.svg)](http://badge.fury.io/js/grunt-potomo)
 [![Dependency Status](https://david-dm.org/axisthemes/grunt-potomo.svg)](https://david-dm.org/axisthemes/grunt-potomo)
 [![devDependency Status](https://david-dm.org/axisthemes/grunt-potomo/dev-status.svg)](https://david-dm.org/axisthemes/grunt-potomo#info=devDependencies)
-[![Gitter chat](https://badges.gitter.im/axisthemes/grunt-potomo.png)](https://gitter.im/axisthemes/grunt-potomo)
 
 > Grunt Plugin to Compile .po files into binary .mo files with msgfmt.
 
