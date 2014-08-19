@@ -1,7 +1,7 @@
 {
   "name": "grunt-potomo",
   "description": "Grunt Plugin to Compile .po files into binary .mo files with msgfmt.",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "homepage": "https://github.com/axisnodejs/grunt-potomo",
   "author": {
     "name": "AxisThemes",
