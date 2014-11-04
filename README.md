@@ -57,7 +57,7 @@ grunt.initConfig({
   }
 });
 
-grunt.loadNpmTasks('grunt-potomo');
+grunt.loadNpmTasks( 'grunt-potomo' );
 
 grunt.registerTask('default', ['potomo']);
 ```
