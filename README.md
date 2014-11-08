@@ -16,7 +16,7 @@ npm install grunt-potomo --save-dev
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-potomo');
+grunt.loadNpmTasks( 'grunt-potomo' );
 ```
 
 ## The "potomo" task
@@ -57,7 +57,7 @@ grunt.initConfig({
   }
 });
 
-grunt.loadNpmTasks('grunt-potomo');
+grunt.loadNpmTasks( 'grunt-potomo' );
 
 grunt.registerTask('default', ['potomo']);
 ```

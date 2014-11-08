@@ -17,7 +17,7 @@ module.exports = function( grunt ) {
 			poDel: false
 		});
 
-		// Check if Gettext is installed or not.
+		// Return warning if not found msgfmt command
 		if ( ! shell.which( 'msgfmt' ) ) {
 			return grunt.fail.warn(
 				'\nYou need to have "GNU Gettext" installed and in your PATH for this task to work.' +
