@@ -51,7 +51,7 @@ grunt.initConfig({
         poDel: false
       },
       files: {
-        'dest/languages': ['en_GB.po', 'ne_NP.po']
+        'dest/languages': [ 'en_GB.po', 'ne_NP.po' ]
       }
     }
   }
@@ -59,7 +59,7 @@ grunt.initConfig({
 
 grunt.loadNpmTasks( 'grunt-potomo' );
 
-grunt.registerTask('default', ['potomo']);
+grunt.registerTask( 'default', ['potomo' ]);
 ```
 
 ### Example usage
