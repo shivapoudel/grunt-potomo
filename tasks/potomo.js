@@ -18,11 +18,13 @@ module.exports = function( grunt ) {
 		});
 
 		// Return warning if not found msgfmt command
-		if ( ! shell.which( 'msgfmt' ) ) {
-			return grunt.fail.warn(
-				'\nYou need to have "GNU Gettext" installed and in your PATH for this task to work.' +
-				'More info: http://www.gnu.org/software/gettext\n'
-			);
+		if ( process.platform !== 'win32' ) {
+			if ( ! shell.which( 'msgfmt' ) ) {
+				return grunt.fail.warn(
+					'\nYou need to have "GNU Gettext" installed and in your PATH for this task to work.' +
+					'More info: http://www.gnu.org/software/gettext\n'
+				);
+			}
 		}
 
 		if ( this.files.length < 1 ) {
