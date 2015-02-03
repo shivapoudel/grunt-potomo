@@ -21,7 +21,7 @@ module.exports = function( grunt ) {
 		if ( process.platform !== 'win32' ) {
 			if ( ! shell.which( 'msgfmt' ) ) {
 				return grunt.fail.warn(
-					'\nYou need to have "GNU Gettext" installed and in your PATH for this task to work.' +
+					'\nYou need to have "GNU GetText" installed and in your PATH for this task to work.' +
 					'More info: http://www.gnu.org/software/gettext\n'
 				);
 			}
