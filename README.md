@@ -142,6 +142,6 @@ grunt.initConfig({
 
 ## License
 
-Copyright (c) 2015 [AxisThemes](http://axisthemes.com)
+Copyright (c) 2015 [AxisThemes](http://axisthemes.com)  
 Licensed under the MIT license:  
 <http://axisthemes.mit-license.org/>
