@@ -1,6 +1,6 @@
 # grunt-potomo [![Build Status](https://travis-ci.org/axisthemes/grunt-potomo.svg?branch=master)](https://travis-ci.org/axisthemes/grunt-potomo)
 
-> Grunt Plugin to Compile .po files into binary .mo files with msgfmt.
+> Grunt plug-in to compile .po files into binary .mo files with msgfmt.
 
 ### Requirements
 * This plugin requires Grunt `~0.4.5`
