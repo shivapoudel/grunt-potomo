@@ -99,7 +99,6 @@ grunt.initConfig({
 
 You can specify multiple `destination: source` items in `files`.
 
-
 ```js
 grunt.initConfig({
   potomo: {
