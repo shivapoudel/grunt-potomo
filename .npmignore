@@ -1,7 +1,7 @@
+.gitignore
 .npmignore
-.editorconfig
-.gitattributes
 .travis.yml
-node_modules
+.editorconfig
 npm-debug.log
+node_modules
 tmp
