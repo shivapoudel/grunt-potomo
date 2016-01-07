@@ -2,7 +2,7 @@
  * grunt-potomo
  * https://github.com/axisthemes/grunt-potomo
  *
- * Copyright (c) 2015 AxisThemes
+ * Copyright (c) 2016 AxisThemes
  * Licensed under the MIT license.
  */
 
