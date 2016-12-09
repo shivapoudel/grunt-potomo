@@ -1,8 +1,8 @@
 /*
  * grunt-potomo
- * https://github.com/axisthemes/grunt-potomo
+ * https://github.com/shivapoudel/grunt-potomo
  *
- * Copyright (c) 2016 AxisThemes
+ * Copyright (c) 2016 Shiva Poudel
  * Licensed under the MIT license.
  */
 

@@ -1,8 +1,8 @@
 /*
  * grunt-potomo
- * https://github.com/axisthemes/grunt-potomo
+ * https://github.com/shivapoudel/grunt-potomo
  *
- * Copyright (c) 2016 AxisThemes
+ * Copyright (c) 2016 Shiva Poudel
  * Licensed under the MIT license.
  */
 
@@ -40,7 +40,7 @@ module.exports = function( grunt ) {
 				return grunt.file.read( filepath );
 			}).join( grunt.util.normalizelf( grunt.util.linefeed ) );
 
-			// Make sure grunt creates the destination folders if they don't exist
+			// Make sure grunt creates the destination folders if they don't exist.
 			if( ! grunt.file.exists( file.dest ) ) {
 				grunt.file.write( file.dest, '' );
 			}

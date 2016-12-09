@@ -1,4 +1,4 @@
-# grunt-potomo [![Build Status](https://travis-ci.org/axisthemes/grunt-potomo.svg?branch=master)](https://travis-ci.org/axisthemes/grunt-potomo) [![npm version](https://img.shields.io/npm/v/grunt-potomo.svg)](https://www.npmjs.com/package/grunt-potomo)
+# grunt-potomo [![Build Status](https://travis-ci.org/shivapoudel/grunt-potomo.svg?branch=master)](https://travis-ci.org/shivapoudel/grunt-potomo) [![npm version](https://img.shields.io/npm/v/grunt-potomo.svg)](https://www.npmjs.com/package/grunt-potomo)
 
 > Grunt plug-in to compile .po files into binary .mo files with msgfmt.
 
@@ -141,6 +141,6 @@ grunt.initConfig({
 
 ## License
 
-Copyright (c) 2016 [AxisThemes](http://axisthemes.com)  
+Copyright (c) 2016 [Shiva Poudel](http://shivapoudel.com)  
 Licensed under the MIT license:  
-<http://axisthemes.mit-license.org/>
+<http://shivapoudel.mit-license.org/>
