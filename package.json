@@ -1,7 +1,7 @@
 {
   "name": "grunt-potomo",
   "description": "Grunt plug-in to compile .po files into binary .mo files with msgfmt.",
-  "version": "3.5.0",
+  "version": "3.4.0",
   "homepage": "https://github.com/shivapoudel/grunt-potomo",
   "author": {
     "name": "Shiva Poudel",
@@ -22,20 +22,17 @@
     }
   ],
   "main": "Gruntfile.js",
-  "engines": {
-    "node": ">=0.11.0"
-  },
   "scripts": {
     "test": "grunt test"
   },
   "dependencies": {
-    "shelljs": "^0.7.5"
+    "shelljs": "~0.7.5"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "^1.1.0",
-    "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-nodeunit": "^1.0.0",
-    "grunt": "^1.0.1"
+    "grunt-contrib-jshint": "~1.1.0",
+    "grunt-contrib-clean": "~1.0.0",
+    "grunt-contrib-nodeunit": "~1.0.0",
+    "grunt": "~1.0.1"
   },
   "peerDependencies": {
     "grunt": ">=0.4.0"
